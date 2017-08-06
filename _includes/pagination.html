@@ -1,0 +1,27 @@
+{% if paginator.tatal_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+  <li class="paginatin_item pagenation_item--previous">
+    <a href="{{ paginatior.previous_page_path | prepend: site.baseurl | replace: '//', '/'}}">前</a>
+  </li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    <li class="paginatin_item">
+      {% if page == paginator.page %}
+        {{ page }}
+      {% elsif page == 1 %}
+        <a href="{{ paginatior.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <li class="paginatin_item pagenation_item--previous">
+    <a href="{{ paginatior.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">次</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

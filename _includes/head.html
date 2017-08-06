@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% if include.title %}
+    <title>{{ page.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+</head>
