@@ -1,0 +1,8 @@
+.read-more {
+  --color-link-underline: transparent;
+
+  &::before {
+    content: '>>';
+    margin-right: .375em;
+  }
+}

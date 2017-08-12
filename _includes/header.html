@@ -1,10 +1,17 @@
 {% capture sitename %}<a href="{{ site.url }}">{{ site.title }}</a>{% endcapture %}
 
-<header class="header">
-  {% if page.layout == 'home' %}
-  <h1 class="header_sitename">{{ sitename }}</h1>
-  {% else %}
-  <p class="header_sitename">{{ sitename }}</p>
-  {% endif %}
-  {% include nav.html %}
+<header class="global-header">
+  <div class="wrapper">
+    <div class="global-header__content">
+      {% if page.layout == 'home' %}
+        <h1 class="global-header__sitename">{{ sitename }}</h1>
+      {% else %}
+        <p class="global-header__sitename">{{ sitename }}</p>
+      {% endif %}
+
+      <nav class="global-header__nav">
+        {% include nav.html %}
+      </nav>
+    </div>
+  </div>
 </header>

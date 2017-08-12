@@ -1,4 +1,8 @@
-_site
-.sass-cache
-.jekyll-metadata
-vendor
+_site/
+.sass-cache/
+.jekyll-metadata/
+.asset-cache/
+
+# Dependencies
+vendor/
+node_modules/

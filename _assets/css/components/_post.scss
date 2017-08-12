@@ -1,0 +1,35 @@
+.post-header {
+  margin-bottom: $spacing-xxxx-large;
+}
+
+.post-title {
+  font-size: $font-size-text-x-large;
+  letter-spacing: .05em;
+  margin: 0 0 $spacing-x-small;
+}
+
+.post-metas {
+  margin: 0 0 .75rem;
+}
+
+.post-content {
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    line-height: 1.2;
+  }
+
+  h2, h3, h4, h5 {
+    + p {
+      margin-top: $spacing-medium;
+    }
+  }
+
+  p {
+    margin: $spacing-x-large 0;
+  }
+}

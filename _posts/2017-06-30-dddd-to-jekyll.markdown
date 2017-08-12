@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  ブログをはじめました
 date:   2017-06-30 22:14:52 +0900
 categories: jekyll update
 ---

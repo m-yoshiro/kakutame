@@ -1,0 +1,23 @@
+.global-header {
+  padding: $spacing-medium $spacing-none;
+  height: $height-header;
+}
+
+.global-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.global-header__sitename {
+  font-size: $font-size-header-sitename;
+  margin: 0;
+
+  a {
+    &:not(:hover):not(:active):not(:focus) {
+      --color-link-underline: transparent;
+      text-shadow: none;
+    }
+  }
+}
