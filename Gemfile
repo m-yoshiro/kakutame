@@ -5,6 +5,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-assets"
    gem "jekyll-archives"
+   gem 'jekyll-seo-tag'
 end
 
 gem 'rake'

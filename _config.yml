@@ -15,10 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: 書くためのブログ
 email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: ```
+これは初めてのブログです。
+```
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://kakutame.com
 twitter_username: jekyllrb
@@ -33,6 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-archives
+  - jekyll-seo-tag
 
 sass:
   sass_dir: assets/_sass
