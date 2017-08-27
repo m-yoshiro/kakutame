@@ -18,11 +18,13 @@
 
   a {
     --color-link-underline: #{$color-text-link};
-    --size-background-height: 100%;
+    --size-background-height: 0.3rem;
     text-shadow: none;
 
     &:hover, &:active, &:focus {
-      --color-link-underline: transparent;
+      // --color-link-underline: transparent;
+      --size-background-height: 100%;
+      text-shadow: none;
     }
   }
 }
