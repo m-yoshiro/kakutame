@@ -6,3 +6,6 @@ _site/
 # Dependencies
 vendor/
 node_modules/
+
+# Env settings
+.env
