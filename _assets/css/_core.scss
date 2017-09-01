@@ -51,8 +51,8 @@ time {
 }
 
 a {
-  --color-link-underline: #{$color-text-black};
-  --size-background-height: 1px;
+  --color-link-underline: #{$color-text-link};
+  --size-background-height: 2px;
   --color-text-border: #fff;
 
   color: $color-text-black;
@@ -61,10 +61,6 @@ a {
   background-repeat: no-repeat;
   background-size: 100% var(--size-background-height);
   background-position: bottom;
-  text-shadow:
-    0 1px 0 var(--color-text-border),
-    -1px 0 0 var(--color-text-border),
-    1px 0 0 var(--color-text-border);
 
   &:hover, &:active, &:focus {
     --color-link-underline: #{$color-text-link};

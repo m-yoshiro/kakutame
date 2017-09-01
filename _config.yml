@@ -1,7 +1,7 @@
 # Site settings
 title: 書くためのブログ
 description: |
-  webデザインやエンジニアリングについて綴っていくブログです。
+  webデザインや開発にまつわるネタを書きとめていくブログです。
 baseurl: ""
 url: https://kakutame.com
 twitter_username: bennkyougirai
