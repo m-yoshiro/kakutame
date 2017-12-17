@@ -15,6 +15,14 @@
 
 .post-content {
 
+  &#{&}--in-article {
+    p {
+      line-height: 1.8;
+      font-size: $font-size-article-text;
+      letter-spacing: .005em;
+    }
+  }
+
   h2,
   h3,
   h4,
@@ -24,13 +32,36 @@
     line-height: 1.2;
   }
 
-  h2, h3, h4, h5 {
+  h2,
+  h3,
+  h4,
+  h5 {
     + p {
       margin-top: $spacing-medium;
     }
   }
 
+  h2 {
+    margin-top: $spacing-xxxxx-large;
+    margin-bottom: $spacing-large;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: .5rem;
+    font-size: $font-size-text-large;
+  }
+
   p {
-    margin: $spacing-x-large 0;
+    margin: $spacing-medium 0;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  li {
+    list-style: disc;
+    + li {
+      margin-top: $spacing-small;
+    }
   }
 }

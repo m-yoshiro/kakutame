@@ -3,6 +3,7 @@
 // --------------------------------
 
 html {
+  font-family: $font-familly;
   box-sizing: border-box;
   *,
   *::before,
@@ -51,8 +52,8 @@ time {
 }
 
 a {
-  --color-link-underline: #{$color-text-link};
-  --size-background-height: 2px;
+  --color-link-underline: #{$color-ui-gray-03};
+  --size-background-height: 1px;
   --color-text-border: #fff;
 
   color: $color-text-black;
