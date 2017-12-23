@@ -75,14 +75,13 @@
 }
 
 .postFooter-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
   &_item {
-    flex: 0 1 15rem;
-    margin-left: 2rem;
     margin-right: 2rem;
+
+    &:nth-child(n+2) {
+      margin-top: $spacing-medium;
+    }
   }
 
   &_label {

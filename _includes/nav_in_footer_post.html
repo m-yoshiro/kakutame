@@ -17,7 +17,7 @@
 
 {% if prevurl or nexturl %}
   <nav class="postFooter-nav">
-    {% if prevurl %}<p class="postFooter-nav_item postFooter-nav_item--prev"><span class="postFooter-nav_label">前の記事:</span> <a href="{{prevurl}}" class="postFooter-nav_link">{{prev.title}}</a></p>{% endif %}
     {% if nexturl %}<p class="postFooter-nav_item postFooter-nav_item--next"><span class="postFooter-nav_label">次の記事:</span> <a href="{{nexturl}}" class="postFooter-nav_link">{{next.title}}</a></p>{% endif %}
+    {% if prevurl %}<p class="postFooter-nav_item postFooter-nav_item--prev"><span class="postFooter-nav_label">前の記事:</span> <a href="{{prevurl}}" class="postFooter-nav_link">{{prev.title}}</a></p>{% endif %}
   </nav>
 {% endif %}
