@@ -17,7 +17,7 @@
 
   &#{&}--in-article {
     p {
-      line-height: 1.8;
+      line-height: 2;
       font-size: $font-size-article-text;
       letter-spacing: .005em;
     }
@@ -37,7 +37,7 @@
   h4,
   h5 {
     + p {
-      margin-top: $spacing-medium;
+      margin-top: $spacing-large;
     }
   }
 
@@ -51,17 +51,41 @@
   }
 
   p {
-    margin: $spacing-medium 0;
+    margin: $spacing-x-large 0;
+  }
+
+  ul, ol {
+    margin-top: $spacing-x-large;
+    margin-bottom: $spacing-x-large;
   }
 
   ul {
     padding-left: 1em;
   }
 
-  li {
+  ul li {
     list-style: disc;
+  }
+
+  li {
     + li {
       margin-top: $spacing-small;
     }
+  }
+}
+
+.postFooter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_item {
+    flex: 0 1 15rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  &_label {
+    display: block;
   }
 }
