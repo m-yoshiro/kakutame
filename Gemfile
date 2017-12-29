@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.1"
+gem "jekyll", "~> 3.x"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-assets"
+   gem "jekyll-assets", "~> 2.x"
    gem "jekyll-archives"
    gem 'jekyll-seo-tag'
 end
