@@ -57,19 +57,30 @@
   ul, ol {
     margin-top: $spacing-x-large;
     margin-bottom: $spacing-x-large;
+    
+    ul, ol {
+      margin-top: $spacing-small;
+      margin-bottom: 0;
+    }
   }
 
   ul {
     padding-left: 1em;
   }
 
-  ul li {
+  ul > li {
     list-style: disc;
+
+    &:nth-child(n + 2) {
+      margin-top: $spacing-medium;
+    }
   }
 
-  li {
-    + li {
-      margin-top: $spacing-small;
+  ul > li li {
+    list-style: circle;
+
+    &:nth-child(n + 2) {
+      margin-top: $spacing-x-small;
     }
   }
 }

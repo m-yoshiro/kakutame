@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  「書くためのブログ」というブログをはじめます
-date:   2017-09-03
-categories: othres
+title: 「書くためのブログ」というブログをはじめます
+date: 2017-09-03
+categories: others
 tags:
   - 雑記
 ---
